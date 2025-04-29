@@ -1,0 +1,99 @@
+body {
+    background-image: url('https://wallpapercave.com/wp/wp5804322.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Roboto Flex', sans-serif;
+    margin: 0;
+    background-color: #0f0f0f;
+    color: #f0f0f0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    background: rgba(10, 10, 10, 0.8);
+    padding: 75px;
+    border: 1px solid #ff00ff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ff00ff;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #00ffff;
+    /* Layers multiple glowing effects behind text */
+    text-shadow: 0 0 5px #00ffff, 0 0 5px #00ffff; 
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+label {
+    display: block;
+    margin: 20px 0 10px;
+    color: #ff00ff;
+}
+
+input {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ff00ff;
+    width: 100%;
+    background-color: #1a1a1a;
+    color: #00ffcc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ff00ff;
+}
+
+button {
+    margin-top: 20px;
+    width: 50%;
+
+    padding: 10px;
+    background: #ff00ff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ff00ff;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #f2a4f2
+}
+#error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.output-group {
+    margin-top: 30px;
+}
+
+.output-group h4 {
+    color: #00ffff;
+    margin-bottom: 0;
+}
+
+.output-group p {
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0 0 3px #00ffff;
+    margin-top: 5px
+}
