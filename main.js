@@ -40,25 +40,28 @@ function clearOutputs() {
 // Connects function with button using click event handler
 
 document.getElementById("calculate-change").addEventListener("click", () => {
+
     // Uses 'parseFloat' to convert input strings into floating-point numbers
+
     const cost = parseFloat(document.getElementById("amount-due").value);
     const payment = parseFloat(document.getElementById("amount-received").value);
+
     const errorDiv = document.getElementById("error");
     errorDiv.innerText = ""; // Removes any previous error messages
-    errorDiv.classList.remove('error');
 
     // Checks if payment is real number
+
     if (isNaN(cost) || isNaN(payment)) {
         errorDiv.innerText = "Please enter valid numbers.";
-        errorDiv.classList.add("error");
-        clearOutputs(); // Clear outputs when error message populates
+        clearOutputs(); 
         return;
     }
+    
     // Checks if payment is greater than cost
+
     if (payment < cost) {
-    errorDiv.innerText = "Payment must be greater than or equal to cost.";
-    errorDiv.classList.add("error");
-    clearOutputs(); // Clear outputs when error message populates
+    errorDiv.innerText = "Payment must be greater than or equal to the cost.";
+    clearOutputs(); 
     return;
     }
 
