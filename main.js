@@ -2,11 +2,14 @@ function changeCalculator(cost, payment) {
 
     // Convert to cents by multipling change by 100 to avoid errors with decimals
 
+
     let change = Math.round((payment - cost) * 100);
     let leftover = change; 
+    let total = payment - cost;
+    let formattedTotal = parseFloat(total.toFixed(2));
 
     // Divides specific change ammount and uses modulo to return leftover for next coin value
-   
+
     let dollars = Math.trunc(leftover / 100);
     leftover %= 100;
 
@@ -21,12 +24,13 @@ function changeCalculator(cost, payment) {
 
     let pennies = leftover;
 
-    return {dollars, quarters, dimes, nickels, pennies};
+    return {total, dollars, quarters, dimes, nickels, pennies};
 }
 
 // Removes any previous change outputs for when error messages appear
 
 function clearOutputs() {
+    document.getElementById("total-output").innerText = "";
     document.getElementById("dollars-output").innerText = "";
     document.getElementById("quarters-output").innerText = "";
     document.getElementById("dimes-output").innerText = "";
@@ -65,6 +69,7 @@ document.getElementById("calculate-change").addEventListener("click", () => {
 
     // Displays results of change calculation using HTML tags
 
+    document.getElementById("total-output").innerText = "$" + change.total.toFixed(2);
     document.getElementById("dollars-output").innerText = change.dollars;
     document.getElementById("quarters-output").innerText = change.quarters;
     document.getElementById("dimes-output").innerText = change.dimes;

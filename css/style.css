@@ -22,7 +22,7 @@ html, body {
 
 .container {
     background: rgba(10, 10, 10, 0.8);
-    padding: 75px;
+    padding: 0px 65px 15px 60px;
     border: 1px solid #ff00ff;
     border-radius: 10px;
     box-shadow: 0 0 20px #ff00ff;
@@ -81,11 +81,11 @@ button:hover {
     margin-top: 10px;
 }
 
-.output-group {
+.output-group, h2 {
     margin-top: 30px;
 }
 
-.output-group h4 {
+.output-group h4, h2 {
     color: #00ffff;
     margin-bottom: 0;
 }
