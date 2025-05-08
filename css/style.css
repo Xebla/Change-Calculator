@@ -4,17 +4,16 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     font-family: 'Roboto Flex', sans-serif;
-    margin: 0;
     background-color: #0f0f0f;
     color: #f0f0f0;
-    padding: 40px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -22,19 +21,20 @@ html, body {
 
 .container {
     background: rgba(10, 10, 10, 0.8);
-    padding: 0px 65px 15px 60px;
+    padding: 0 65px 15px 60px;
     border: 1px solid #ff00ff;
     border-radius: 10px;
     box-shadow: 0 0 20px #ff00ff;
     max-width: 500px;
     width: 100%;
+    height: auto;
 }
 
 h1 {
     font-family: 'Bebas Neue', sans-serif;
     color: #00ffff;
     /* Layers multiple glowing effects behind text */
-    text-shadow: 0 0 5px #00ffff, 0 0 5px #00ffff; 
+    text-shadow: 0 0 5px #00ffff, 0 0 5px #00ffff;
     text-align: center;
     font-size: 4rem;
     letter-spacing: 2px;
@@ -75,17 +75,20 @@ button {
 button:hover {
     background: #f2a4f2
 }
+
 #error {
     color: red;
     font-weight: bold;
     margin-top: 10px;
 }
 
-.output-group, h2 {
+.output-group,
+h2 {
     margin-top: 30px;
 }
 
-.output-group h4, h2 {
+.output-group h4,
+h2 {
     color: #00ffff;
     margin-bottom: 0;
 }

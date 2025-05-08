@@ -2,7 +2,6 @@ function changeCalculator(cost, payment) {
 
     // Convert to cents by multipling change by 100 to avoid errors with decimals
 
-
     let change = Math.round((payment - cost) * 100);
     let leftover = change; 
     let total = payment - cost;
